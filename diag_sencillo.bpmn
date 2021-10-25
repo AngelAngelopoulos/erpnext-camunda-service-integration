@@ -28,7 +28,7 @@
   </bpmn:process>
   <bpmn:message id="Message_1loh0pc" name="Message_value">
     <bpmn:extensionElements>
-      <zeebe:subscription correlationKey="message-value" />
+      <zeebe:subscription correlationKey="=message-value" />
     </bpmn:extensionElements>
   </bpmn:message>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
