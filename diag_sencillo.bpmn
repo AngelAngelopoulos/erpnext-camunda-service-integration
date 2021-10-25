@@ -16,13 +16,14 @@
     <bpmn:intermediateCatchEvent id="Messsage_1" name="Message-1">
       <bpmn:incoming>Flow_06re11i</bpmn:incoming>
       <bpmn:outgoing>Flow_1nza4ug</bpmn:outgoing>
-      <bpmn:messageEventDefinition id="MessageEventDefinition_05165dv" />
+      <bpmn:messageEventDefinition id="MessageEventDefinition_05165dv" messageRef="Message_1gabufh" />
     </bpmn:intermediateCatchEvent>
     <bpmn:serviceTask id="Activity_1" name="Activity-1">
       <bpmn:incoming>Flow_1nza4ug</bpmn:incoming>
       <bpmn:outgoing>Flow_1fnjqtx</bpmn:outgoing>
     </bpmn:serviceTask>
   </bpmn:process>
+  <bpmn:message id="Message_1gabufh" name="Message_value" />
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0wbdzfi">
       <bpmndi:BPMNShape id="Participant_1j72yvc_di" bpmnElement="process-single" isHorizontal="true">
